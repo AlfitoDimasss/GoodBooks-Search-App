@@ -1,0 +1,5 @@
+Halo Kakak-Kakak reviewer, sebelumnya terima kasih karena sudah mau mereview project saya. Disini saya mau memberi tahu beberapa boundary dari project ini
+dimana yang pertama yaitu custom-element yang dipakai tidak menerapkan shadowDOM karena saat saya coba menggunakan shadowDOM itu membuat utility class
+Tailwind tidak berjalan, dan saya sampai sekarang masih tidak paham cara mengatasinya.
+Kedua yaitu project ini hanya saya bangun untuk media phone dan desktop dengan ketentuan xl (1280px), karenanya mungkin di beberapa media mungkin akan
+acak-acakan terutama apabila lebih besar dari media phone atau lebih besar dari media xl seperti >1500px.

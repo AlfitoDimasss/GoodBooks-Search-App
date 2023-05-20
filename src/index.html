@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webpack App</title>
+</head>
+
+<body>
+  <header>
+    <nav-bar></nav-bar>
+    <div id="jumbotron" class=" p-5 flex flex-col flex-wrap justify-center items-center gap-1 relative xl:flex-row xl:justify-evenly">
+      <div class="text-center p-2 xl:w-1/4 xl:text-left" id="jumbotron-side-left">
+        <h1 class="text-3xl xl:text-7xl">New & Complete</h1>`
+        <h5 class="font-secondary font-medium text-xs -mt-5 xl:text-base xl:mt-0">Explore every books around you</h5>
+        <form class="mt-10" id="form-search">
+          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50" placeholder="Book Title" required>
+            <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-[#daaa63] hover:bg-[#2c1810] font-medium rounded-full text-sm px-4 py-2">Search</button>
+          </div>
+        </form>
+      </div>
+      <div class="hidden w-[400px] h-[575px] xl:block"></div>
+      <img src="./img/novel.png" alt="" class="hidden absolute img-jumbotron xl:block">
+      <div id="jumbotron-side-right" class="hidden xl:flex xl:items-center xl:flex-row xl:gap-8">
+        <display-book id="latestBook" class="text-center h-60 w-3/4 p-2 flex gap-1 xl:w-56 xl:h-80"></display-book>
+        <display-book id="randomBook" class="text-center h-60 w-3/4 p-2 flex gap-1 mb-5 xl:w-56 xl:mb-0 xl:h-80"></display-book>
+      </div>
+    </div>
+  </header>
+  <shelf-border></shelf-border>
+  <main class="flex flex-col justify-center items-center my-10 p-2">
+    <book-list class="flex w-3/4 min-h-[35vh] xl:min-h-0"></book-list>
+  </main>
+  <shelf-border></shelf-border>
+  <footer-comp></footer-comp>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Book Detail</h2>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
